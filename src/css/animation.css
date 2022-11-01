@@ -1,0 +1,23 @@
+@-webkit-keyframes start-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes start-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.active-opacity {
+  transform: scale(1) !important;
+}
+
+.active-bottom {
+  transform: translateY(0) !important;
+}

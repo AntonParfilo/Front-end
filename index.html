@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/main.css">
+    <title>Front-End Dev</title>
+</head>
+
+<body>
+    <div class="body__wrapper">
+        <header class="header">
+            <div class="container header__wrapper">
+                <div class="header__lc">
+                    <div class="header__logo-wrapper">
+                        <svg class="header__logo">
+                            <use xlink:href="/src/img/sprite.svg#logo"></use>
+                        </svg>
+                        <img class="header__logo-circle" src="/src/img/circle-text.png" alt="circle">
+                    </div>
+                    <div id="header_text"></div>
+                </div>
+                <div class="header__rc">
+                    <div class="header__menu" data-da=".header, 1270, last">
+                        <ul>
+                            <li><div><a href="#" data-scrollTo=".content">SPA приложения</a></div></li>
+                            <li><div><a href="#" data-scrollTo=".htmlcss">Верстка HTML/CSS</a></div></li>
+                            <li><div><a href="#" data-scrollTo=".about">Обо мне</a></div></li>
+                            <li><div><a href="#" data-scrollTo=".footer">Контакты</a></div></li>
+                        </ul>
+                    </div>
+                    <div class="header__phone">
+                        <a href="tel:+380961825452"><h2>+38 096 182 54 52</h2></a>
+                    </div>
+                    <div class="header__portfolio">
+                        Портфолио
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content container">
+            <h1 class="content__title">Разработка SPA приложений</h1>
+            <div class="content__spa">
+                <div class="content__spa_lc">
+                    <p class="content__subtitle">Лучшие решения для организаций малого и среднего бизнеса.</p>
+                    <p class="content__subtitle">Индивидуальный подход к каждому клиенту.</p>
+                    <p class="content__subtitle">Грамотная реализация сложных и нестандартных задач.</p>
+                </div>
+                <div class="content__spa_rc">
+
+                </div>
+            </div>
+            <div class="content__text">
+                <p>
+                    Одностраничные SPA-приложения – это частный случай веб-приложений, которые повсеместно приходят на
+                    смену классическим веб-сайтам и лэндингам. Главное отличие веб-приложений от традиционных сайтов в
+                    том, что пользователь здесь получает не статическую информацию в виде текста, графики или таблиц, а
+                    динамически сгенерированные структурированные данные. Они могут представлять собой все тот же текст,
+                    графику, таблицы и мультимедийную информацию, полученную при интерактивном взаимодействии клиента и
+                    сервера, где хранится веб-приложение.
+                </p>
+                <p>
+                    В отличие от сайта веб-приложение – это не набор HTML-документов, а целый программный комплекс,
+                    который загружается на клиентское устройство после предварительных вычислений. Делается это на
+                    основании данных пользователя и информации, которая хранится в базе данных веб-приложения.
+                    Вычисления производятся как на стороне сервера (Back-end), так и на стороне клиента, то есть на
+                    устройстве пользователя (Front-end).
+                </p>
+            </div>
+            <div class="content__spa_oth">
+                <div class="content__spa_oth_lc">
+                    <div class="content__spa_oth_lc_wrapper" data-anim="opacity"></div>
+                </div>
+                <div class="content__spa_oth_rc">
+                    <div class="animation_wrapper">
+                        <p class="content__subtitle" data-anim="bottom">Что такое SPA приложение?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__text">
+                <p>
+                    Одностраничное SPA-приложение – это в некотором смысле оптимум в построении программной логики и
+                    функциональности веб-проектов. В этом случае веб-приложение загружается на устройство пользователя и
+                    работает в рамках всего одной веб-страницы. Функциональность одностраничного SPA-приложения удается
+                    реализовать, используя не только классический язык верстки и разметки веб-докаументов HTML/CSS, но и
+                    современные программные технологии, такие как:</br></br>
+
+                    JavaScript – язык исполняемых сценариев для веб-сайтов.</br></br>
+                    React.js, Vue.js и Angular.js – популярные JavaScript-библиотеки и фреймворки для построения
+                    пользовательских интерфейсов и разработки одностраничных или мобильных приложений.</br></br>
+
+                    Фактически одностраничное SPA-приложение – это веб-страница, к которой подключено множество модулей,
+                    сценариев и других файлов, которые исполняются не все одновременно, а при вызове клиентским
+                    устройством.
+
+                </p>
+                <p>
+                    То есть это лишь оболочка для реализации исполняемых модулей, которые удается запускать так
+                    называемым асинхронным методом, то есть по запросу. Асинхронный принцип обмена данными между
+                    устройствами и севером, или технология Ajax значительно ускоряет работу SPA-приложений и экономит
+                    интернет-траффик.</br></br>
+
+                    Предварительно на устройство загружаются лишь модули, ответственные за первоначальный запуск
+                    SPA-приложения. Причем в зависимости от аппаратной модели клиентского гаджета, набор активных
+                    сценариев и библиотек, необходимых для запуска SPA-приложения, будет своим.</br></br>
+
+                    Столь своеобразная логика работы SPA-приложений дает возможность запускать на любых устройствах, где
+                    есть веб-браузер и доступ к интернету. Например, популярнейшие сервисы компании Google – почтовый
+                    клиент Gmail и переводчик Google Translate не что иное, как исполняемые SPA-приложения.
+                </p>
+            </div>
+            <div class="content__title_tech">
+                <div class="animation_wrapper">
+                    <h1 data-anim="bottom">Технологии которые я использую для SPA</h1>
+                </div>
+            </div>
+            <div class="content__tech">
+                <div class="content__tech_item">
+                    <div class="content__tech_item_button">
+                        <a href="https://ru.reactjs.org/" target="_blank">Подробнее</a>
+                    </div>
+                    <div class="tech__header">
+                        <svg>
+                            <use xlink:href="./src/img/react-sprite-icons.svg#react-icon"></use>
+                        </svg>
+                        <h2>React.js</h2>
+                    </div>
+                    <p>React – это популярная библиотека языка программирования Javascript, которая применяется для
+                        создания пользовательских web-интерфейсов. Она имеет определенные шаблоны, благодаря чему
+                        существенно упрощает и ускоряет процесс frontend-разработки.</br></br>
+                        React делает безболезным создание
+                        интерактивных пользовательских интерфейсов. Создавайте простые
+                        представления для каждого состояния вашего приложения, и React будет эффективно обновлять и
+                        отрисовать только нужные компоненты при изменении ваших данных.</br></br>
+                        Декларативные представления делают ваш код более предсказуемым и легче для отладки.</p>
+                </div>
+                <div class="content__tech_item">
+                    <div class="content__tech_item_button">
+                        <a href="https://ru.wikipedia.org/wiki/Redux" target="_blank">Подробнее</a>
+                    </div>
+                    <div class="tech__header">
+                        <svg>
+                            <use xlink:href="./src/img/react-sprite-icons.svg#redux-icon"></use>
+                        </svg>
+                        <h2>Redux</h2>
+                    </div>
+                    <p>Redux - это менеджер состояний. Чаще всего его используют с React, но его возможности не
+                        ограничиваются одной этой библиотекой. Хотя в React есть собственный метод управления
+                        состояниями, он плохо масштабируется.
+                        Перемещение состояния вверх по дереву работает для простых приложений, но в более сложных
+                        архитектурах изменение состояния производится через свойства (props). Ещё лучше делать это
+                        через внешнее глобальное хранилище.</br></br>
+                        Библиотека Redux — это способ управления состоянием приложения. Она основана на нескольких
+                        концепциях, изучив которые, можно с лёгкостью решать проблемы с состоянием.</p>
+                </div>
+                <div class="content__tech_item">
+                    <div class="content__tech_item_button">
+                        <a href="https://ru.redux-saga.js.org/" target="_blank">Подробнее</a>
+                    </div>
+                    <div class="tech__header">
+                        <svg>
+                            <use xlink:href="./src/img/react-sprite-icons.svg#saga-icon"></use>
+                        </svg>
+                        <h2>Redux-Saga</h2>
+                    </div>
+                    <p>Redux-Saga - это библиотека, которая призвана упростить и улучшить выполнение сайд-эффектов
+                        (т.е. таких действий, как асинхронные операции, типа загрузки данных и "грязных" действий,
+                        типа доступа к браузерному кэшу) в React/Redux приложениях.
+
+                        Можно представить это так, что сага - это как отдельный поток в вашем приложении, который
+                        отвечает за сайд-эффекты. redux-saga - это redux мидлвар, что означает, что этот поток может
+                        запускаться, останавливаться и отменяться из основного приложения с помощью обычных redux
+                        экшенов, оно имеет доступ к полному состоянию redux приложения и также может диспатчить
+                        redux экшены.</p>
+                </div>
+            </div>
+            <div class="content__tech">
+                <div class="content__tech_item">
+                    <div class="content__tech_item_button">
+                        <a href="https://ru.reactjs.org/docs/hooks-intro.html" target="_blank">Подробнее</a>
+                    </div>
+                    <div class="tech__header">
+                        <svg>
+                            <use xlink:href="./src/img/react-sprite-icons.svg#hooks-icon"></use>
+                        </svg>
+                        <h2>React Hooks</h2>
+                    </div>
+                    <p>Хуки — это функции, с помощью которых вы можете «подцепиться» к состоянию и методам
+                        жизненного цикла React из функциональных компонентов. Хуки не работают внутри классов — они
+                        дают вам возможность использовать React без классов.</br></br>
+                        Хуки значительно улучшили React из-за того, что с их помощью можно писать код, который
+                        получается проще, чем код, который писали раньше, но при этом позволяет быстрее и
+                        эффективнее реализовывать похожий функционал. А ещё можно, не пользуясь классами, работать с
+                        состоянием компонентов и с методами их жизненного цикла.
+                    </p>
+                </div>
+                <div class="content__tech_item">
+                    <div class="content__tech_item_button">
+                        <a href="https://ru.reactjs.org/docs/components-and-props.html" target="_blank">Подробнее</a>
+                    </div>
+                    <div class="tech__header">
+                        <svg>
+                            <use xlink:href="./src/img/react-sprite-icons.svg#components-icon"></use>
+                        </svg>
+                        <h2>Функциональные компоненты</h2>
+                    </div>
+                    <p>С появлением функциональных компонентов и хуков, React значительно преобразился.
+                        Функциональные компоненты считаются более современным подходом в разработке SPA приложений.
+                        С помощью функциональных компонентов и хуков можно решать те же задачи, что и раньше, не
+                        переключаясь между различными механизмами.
+                        Можно писать код, который получается проще, чем код, который писали раньше, но при этом
+                        позволяет быстрее и эффективнее реализовывать похожий функционал.
+                        При использовании функциональных компонентов можно достичь значительного уменьшения строк
+                        кода.
+                    </p>
+                </div>
+                <div class="content__tech_item">
+                    <div class="content__tech_item_button">
+                        <a href="https://ru.wikipedia.org/wiki/Flux-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0"
+                            target="_blank">Подробнее</a>
+                    </div>
+                    <div class="tech__header">
+                        <svg>
+                            <use xlink:href="./src/img/react-sprite-icons.svg#flux-icon"></use>
+                        </svg>
+                        <h2>Flux архитектура</h2>
+                    </div>
+                    <p>Flux - это архитектура, ответственная за создание слоя данных в JavaScript приложениях и
+                        разработку
+                        серверной стороны в веб-приложениях.
+                        Flux следует концепции однонаправленного потока данных, что делает его простым для поиска
+                        ошибок. Данные проходят через прямой поток вашего приложения. React и Flux — на данный
+                        момент два самых популярных фреймворка, которые используют принцип однонаправленного потока
+                        данных. Flux помогает сделать код более предсказуемым, в сравнении с МVC фреймворками.
+                        Разработчики могут создавать приложения, не беспокоясь о сложных взаимодействиях между
+                        источниками данных.
+                    </p>
+                </div>
+            </div>
+            <div class="content__tech_m">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content__tech_item">
+                                <div class="tech__header">
+                                    <svg>
+                                        <use xlink:href="./src/img/react-sprite-icons.svg#react-icon"></use>
+                                    </svg>
+                                    <h2>React.js</h2>
+                                </div>
+                                <p>React – это популярная библиотека языка программирования Javascript, которая
+                                    применяется для
+                                    создания пользовательских web-интерфейсов. Она имеет определенные шаблоны, благодаря
+                                    чему
+                                    существенно упрощает и ускоряет процесс frontend-разработки.</br></br>
+                                    React делает безболезным создание
+                                    интерактивных пользовательских интерфейсов. Создавайте простые
+                                    представления для каждого состояния вашего приложения, и React будет эффективно
+                                    обновлять и
+                                    отрисовать только нужные компоненты при изменении ваших данных.
+                                    Декларативные представления делают ваш код более предсказуемым и легче для отладки.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__tech_item">
+                                <div class="tech__header">
+                                    <svg>
+                                        <use xlink:href="./src/img/react-sprite-icons.svg#redux-icon"></use>
+                                    </svg>
+                                    <h2>Redux</h2>
+                                </div>
+                                <p>Redux - это менеджер состояний. Чаще всего его используют с React, но его возможности
+                                    не ограничиваются одной этой библиотекой. Хотя в React есть собственный метод
+                                    управления состояниями, он плохо масштабируется. Перемещение состояния вверх по
+                                    дереву работает для простых приложений, но в более сложных архитектурах изменение
+                                    состояния производится через свойства (props). Ещё лучше делать это через внешнее
+                                    глобальное хранилище.</br></br>
+
+                                    Библиотека Redux — это способ управления состоянием приложения. Она основана на
+                                    нескольких концепциях, изучив которые, можно с лёгкостью решать проблемы с
+                                    состоянием.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__tech_item">
+                                <div class="tech__header">
+                                    <svg>
+                                        <use xlink:href="./src/img/react-sprite-icons.svg#saga-icon"></use>
+                                    </svg>
+                                    <h2>Redux-Saga</h2>
+                                </div>
+                                <p>Redux-Saga - это библиотека, которая призвана упростить и улучшить выполнение
+                                    сайд-эффектов (т.е. таких действий, как асинхронные операции, типа загрузки данных и
+                                    "грязных" действий, типа доступа к браузерному кэшу) в React/Redux приложениях.
+                                    Можно представить это так, что сага - это как отдельный поток в вашем приложении,
+                                    который отвечает за сайд-эффекты. redux-saga - это redux мидлвар, что означает, что
+                                    этот поток может запускаться, останавливаться и отменяться из основного приложения с
+                                    помощью обычных redux экшенов, оно имеет доступ к полному состоянию redux приложения
+                                    и также может диспатчить redux экшены.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__tech_item">
+                                <div class="tech__header">
+                                    <svg>
+                                        <use xlink:href="./src/img/react-sprite-icons.svg#hooks-icon"></use>
+                                    </svg>
+                                    <h2>React Hooks</h2>
+                                </div>
+                                <p>Хуки — это функции, с помощью которых вы можете «подцепиться» к состоянию и методам
+                                    жизненного цикла React из функциональных компонентов. Хуки не работают внутри
+                                    классов — они дают вам возможность использовать React без классов.</br></br>
+                                    Хуки значительно улучшили React из-за того, что с их помощью можно писать код,
+                                    который получается проще, чем код, который писали раньше, но при этом позволяет
+                                    быстрее и эффективнее реализовывать похожий функционал. А ещё можно, не пользуясь
+                                    классами, работать с состоянием компонентов и с методами их жизненного цикла. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__tech_item">
+                                <div class="tech__header">
+                                    <svg>
+                                        <use xlink:href="./src/img/react-sprite-icons.svg#components-icon"></use>
+                                    </svg>
+                                    <h2>Функциональные компоненты</h2>
+                                </div>
+                                <p>С появлением функциональных компонентов и хуков, React значительно преобразился.
+                                    Функциональные компоненты считаются более современным подходом в разработке SPA
+                                    приложений. С помощью функциональных компонентов и хуков можно решать те же задачи,
+                                    что и раньше, не переключаясь между различными механизмами. Можно писать код,
+                                    который получается проще, чем код, который писали раньше, но при этом позволяет
+                                    быстрее и эффективнее реализовывать похожий функционал. При использовании
+                                    функциональных компонентов можно достичь значительного уменьшения строк кода.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content__tech_item">
+                                <div class="tech__header">
+                                    <svg>
+                                        <use xlink:href="./src/img/react-sprite-icons.svg#flux-icon"></use>
+                                    </svg>
+                                    <h2>Flux архитектура</h2>
+                                </div>
+                                <p>Flux - это архитектура, ответственная за создание слоя данных в JavaScript
+                                    приложениях и разработку серверной стороны в веб-приложениях. Flux следует концепции
+                                    однонаправленного потока данных, что делает его простым для поиска ошибок. Данные
+                                    проходят через прямой поток вашего приложения. React и Flux — на данный момент два
+                                    самых популярных фреймворка, которые используют принцип однонаправленного потока
+                                    данных. Flux помогает сделать код более предсказуемым, в сравнении с МVC
+                                    фреймворками. Разработчики могут создавать приложения, не беспокоясь о сложных
+                                    взаимодействиях между источниками данных.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="htmlcss container">
+            <div class="animation_wrapper">
+                <h1 data-anim="bottom">Профессиональная верстка страниц HTML/CSS/JS</h1>
+            </div>
+            <div class="htmlcss__content">
+                <div class="htmlcss__content_lc">
+                    <div class="htmlcss__content_lc_wrapper" data-anim="opacity"></div>
+                    <div id="html_text"></div>
+                </div>
+                <div class="htmlcss__content_rc" data-anim="cascad">
+                    <div class="animation_wrapper">
+                        <div class="htmlcss__blocks htmlcss__blocks">
+                            <h2>Валидная верстка с использованием семантических <span>HTML5</span> тегов</h2>
+                        </div>
+                        <div class="htmlcss__block1 htmlcss__blocks">
+                            <h2>Верстка адаптивных страниц под <span>ВСЕ</span> устройства</h2>
+                        </div>
+                        <div class="htmlcss__block2 htmlcss__blocks">
+                            <h2>Верстка <span>Pixel Perfect</span> по шаблонам Figma/PSD</h2>
+                        </div>
+                        <div class="htmlcss__block3 htmlcss__blocks">
+                            <h2>Использование <span>SCSS</span> препроцессора при разработке</h2>
+                        </div>
+                        <div class="htmlcss__block4 htmlcss__blocks">
+                            <h2>Оптимизация изображений в <span>WEBP/SVG</span> форматы</h2>
+                        </div>
+                        <div class="htmlcss__block5 htmlcss__blocks">
+                            <h2>Разработка <span>функционала</span> UI интерфейсов страниц на JavaScript</h2>
+                        </div>
+                        <div class="htmlcss__block6 htmlcss__blocks">
+                            <h2>Создание различных <span>анимаций</span>, <span>параллакс</span> еффектов</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about container">
+            <h1>Обо мне</h1>
+            <div class="about__content">
+                <div class="about__content_lc">
+                    <p class="about__subtitle">Давайте знакомиться!</p>
+                    <p class="about__text">
+                        Меня зовут Антон, мне 32 года и я из города Харькова.
+                    </p>
+                    <p>
+                        Я увлечённый своим делом Front-End разработчик, занимаюсь разработкой WEB сайтов и SPA
+                        приложений.
+                        Никогда не стою на месте, изучаю новые интрументы и технологии для разработки. Моя мотивация
+                        заключается
+                        исключительно в собственном энтузиазме и любопытстве, я искренне люблю своё дело. Всегда
+                        щепетильно отношусь
+                        к поставленным задачам и ответственно выполняю свою работу.
+                    </p>
+                </div>
+                <div class="about__content_rc">
+                    <div class="about__content_rc_wrapper"></div>
+                </div>
+            </div>
+            <h2>Мои навыки</h2>
+            <div class="swiper-skills">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>HTML5</p>
+                            <div class="about__skill_desc">
+                                <span>HTML5 — это не продолжатель языка разметки гипертекста, а новая открытая
+                                    платформа,
+                                    предназначенная для создания веб-приложений использующих аудио, видео, графику,
+                                    анимацию и
+                                    многое другое.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>CSS3</p>
+                            <div class="about__skill_desc">
+                                <span>CSS - это каскадные таблицы стилей. Этот язык разметки определяет, как
+                                    HTML-элементы веб-сайта должны отображаться на интерфейсе страницы. Если HTML - это
+                                    гипсокартон, CSS - это краска. В то время как HTML является основной структурой
+                                    вашего сайта, CSS - это то, что дает всему вашему сайту стиль.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>SCSS</p>
+                            <div class="about__skill_desc">
+                                <span>SCSS — "диалект" языка SASS. А что такое SASS? SASS это язык похожий на HAML
+                                    (весьма лаконичный шаблонизатор), но предназначенный для упрощения создания
+                                    CSS-кода. Проще говоря, SASS это такой язык, код которого специальной
+                                    ruby-программой транслируется в обычный CSS код.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>Bootstrap</p>
+                            <div class="about__skill_desc">
+                                <span>Bootstrap — свободный набор инструментов для создания сайтов и веб-приложений.
+                                    Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок,
+                                    меток, блоков навигации и прочих компонентов веб-интерфейса, включая
+                                    JavaScript-расширения.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>JavaScript</p>
+                            <div class="about__skill_desc">
+                                <span>JavaScript — это язык программирования, который используют для написания frontend-
+                                    и backend-частей сайтов, а также мобильных приложений. Часто в текстах и обучающих
+                                    материалах название языка сокращают до JS. </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>jQuery</p>
+                            <div class="about__skill_desc">
+                                <span>jQuery — набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и
+                                    HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM,
+                                    обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также
+                                    библиотека jQuery предоставляет удобный API для работы с AJAX.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>Gulp</p>
+                            <div class="about__skill_desc">
+                                <span>Gulp — это таск-менеджер для автоматического выполнения часто используемых задач,
+                                    написанный на языке программирования JavaScript. Программное обеспечение использует
+                                    командную строку для запуска задач, определённых в файле Gulpfile. Создан как
+                                    ответвление от проекта Grunt, чтоб взять из него лучшие практики.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>WebPack</p>
+                            <div class="about__skill_desc">
+                                <span>Webpack — это сборщик модулей JavaScript с открытым исходным кодом. Он создан в
+                                    первую очередь для JavaScript, но может преобразовывать внешние ресурсы, такие как
+                                    HTML, CSS и изображения, если включены соответствующие загрузчики.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>React.js</p>
+                            <div class="about__skill_desc">
+                                <span>React – это популярная библиотека языка программирования Javascript, которая
+                                    применяется для создания пользовательских web-интерфейсов. Она имеет определенные
+                                    шаблоны, благодаря чему существенно упрощает и ускоряет процесс
+                                    frontend-разработки.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>Redux</p>
+                            <div class="about__skill_desc">
+                                <span>Redux - это менеджер состояний. Чаще всего его используют с React, но его
+                                    возможности не ограничиваются одной этой библиотекой. Хотя в React есть собственный
+                                    метод управления состояниями, он плохо масштабируется. Перемещение состояния вверх
+                                    по дереву работает для простых приложений, но в более сложных архитектурах изменение
+                                    состояния производится через свойства (props). Ещё лучше делать это через внешнее
+                                    глобальное хранилище.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>Redux-Saga</p>
+                            <div class="about__skill_desc">
+                                <span>Redux-Saga - это библиотека, которая призвана упростить и улучшить выполнение
+                                    сайд-эффектов (т.е. таких действий, как асинхронные операции, типа загрузки данных и
+                                    "грязных" действий, типа доступа к браузерному кэшу) в React/Redux приложениях.
+                                    Можно представить это так, что сага - это как отдельный поток в вашем приложении,
+                                    который отвечает за сайд-эффекты.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>Redux-ToolKit</p>
+                            <div class="about__skill_desc">
+                                <span>Redux Toolkit - это пакет, облегчающий работу с Redux . Слишком сложная настройка
+                                    хранилища (store) Для того, чтобы заставить Redux делать что-то полезное, приходится
+                                    использовать дополнительные пакеты Слишком много шаблонного кода.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>Figma</p>
+                            <div class="about__skill_desc">
+                                <span>Фигма — графический редактор для создания прототипов сайтов и приложений. Над
+                                    проектом одновременно могут работать несколько человек, так как можно выдать доступ
+                                    на редактирование или комментирование любому.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>Photoshop</p>
+                            <div class="about__skill_desc">
+                                <span>Adobe Photoshop — многофункциональный графический редактор, разрабатываемый и
+                                    распространяемый компанией Adobe Systems. В основном работает с растровыми
+                                    изображениями, однако имеет некоторые векторные инструменты. Продукт является
+                                    лидером рынка в области коммерческих средств редактирования растровых изображений и
+                                    наиболее известной программой разработчика. </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about__skill">
+                            <p>GIT</p>
+                            <div class="about__skill_desc">
+                                <span>Git - это консольная утилита, для отслеживания и ведения истории изменения файлов,
+                                    в вашем проекте. Чаще всего его используют для кода, но можно и для других файлов.
+                                    Например, для картинок - полезно для дизайнеров.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination-skills"></div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__content container">
+                <div class="footer__lc">
+                    <h2>Контакты</h2>
+                    <div id="block7">
+                        <a href="tel:+380961825452">
+                            <h1>096 182 54 52</h1>
+                        </a>
+                        <h2><a class="menu__email" href="mailto:anton.parfilo@gmail.com">anton.parfilo@gmail.com</a>
+                        </h2>
+                        <div class="menu__social">
+                            <div class="item_wrapper">
+                                <a href="viber://chat?number=%2B380961825452" target="_blank">
+                                    <div class="item">
+                                        <div class="square"></div>
+                                        <svg class="item_img">
+                                            <use xlink:Href="./src/img/viber-icon.svg#viber"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item_wrapper">
+                                <a href="https://t.me/Anton_Parfilo" target="_blank">
+                                    <div class="item">
+                                        <div class="square"></div>
+                                        <svg class="item_img">
+                                            <use xlink:Href="./src/img/telegram-icon.svg#telegram"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item_wrapper">
+                                <a href="mailto:anton.parfilo@gmail.com" target="_blank">
+                                    <div class="item">
+                                        <div class="square"></div>
+                                        <svg class="item_img">
+                                            <use xlink:Href="./src/img/gmail-icon.svg#gmail"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item_wrapper">
+                                <a href="https://github.com/ragaban?tab=repositories" target="_blank">
+                                    <div class="item">
+                                        <div class="square"></div>
+                                        <svg class="item_img">
+                                            <use xlink:Href="./src/img/github-icon.svg#github"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__rc">
+                    <h2>Личный сайт Front-End разработчика</h2>
+                    <nav class="footer__menu">
+                        <ul>
+                            <li><div><a href="#" data-scrollTo=".content">SPA приложения</a></div></li>
+                            <li><div><a href="#" data-scrollTo=".htmlcss">Верстка HTML/CSS</a></div></li>
+                            <li><div><a href="#" data-scrollTo=".about">Обо мне</a></div></li>
+                            <li><div><a href="#" data-scrollTo=".footer">Контакты</a></div></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__copy">
+                        © Anton Parfilo. 2022. <span>Ukraine<span class="kh">Kharkov</span></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="portfolio">
+        <div class="portfolio__lc">
+            <div class="portfolio__lc_top">
+                <div class="block6">
+                    <a href="https://ragaban.github.io/Aperture/" target="_blank">
+                        <h2>Landing Aperture</h2>
+                        <div class="block__vertical_img">
+                            <img class="img__autoscroll" src="./src/img/Aperture.png" alt="Aperture">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio__lc_bottom">
+                <div class="block7">
+                    <a href="tel:+380961825452"><h1>096 182 54 52</h1></a>
+                    <h2><a class="menu__email" href="mailto:anton.parfilo@gmail.com">anton.parfilo@gmail.com</a></h2>
+                    <div class="menu__social">
+                        <div class="item_wrapper">
+                            <a href="viber://chat?number=%2B380961825452" target="_blank">
+                                <div class="item">
+                                    <div class="square"></div>
+                                    <svg class="item_img">
+                                        <use xlink:Href="./src/img/viber-icon.svg#viber"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_wrapper">
+                            <a href="https://t.me/Anton_Parfilo" target="_blank">
+                                <div class="item">
+                                    <div class="square"></div>
+                                    <svg class="item_img">
+                                        <use xlink:Href="./src/img/telegram-icon.svg#telegram"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_wrapper">
+                            <a href="mailto:anton.parfilo@gmail.com" target="_blank">
+                                <div class="item">
+                                    <div class="square"></div>
+                                    <svg class="item_img">
+                                        <use xlink:Href="./src/img/gmail-icon.svg#gmail"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_wrapper">
+                            <a href="https://github.com/ragaban?tab=repositories" target="_blank">
+                                <div class="item">
+                                    <div class="square"></div>
+                                    <svg class="item_img">
+                                        <use xlink:Href="./src/img/github-icon.svg#github"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio__rc">
+            <div class="portfolio__rc_top">
+                <div class="portfolio__rc_top_left">
+                    <div class="block4">
+                        <a href="https://ragaban.github.io/ViaKeto/" target="_blank">
+                            <h2>Landing ViaKeto</h2>
+                            <div class="block__vertical_img">
+                                <img class="img__autoscroll" src="./src/img/ViaKeto.png" alt="ViaKeto">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__rc_top_right">
+                    <div class="portfolio__rc_top_right_top">
+                        <div class="block2">
+                            <a href="http://react-home.pp.ua/kodo/" target="_blank">
+                                <h2>Landing Kodo</h2>
+                                <div class="block__vertical_img">
+                                    <img class="img__autoscroll" src="./src/img/kodo.jpg" alt="Kodo">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block1">
+                            <div class="close_menu">
+                                <img class="portfolio_close_button" src="/src/img/close.png" alt="close">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__rc_top_right_bottom">
+                        <div class="block3">
+                            <h2>Space Tourism</h2>
+                            <div class="block__horizontal_content">
+                                <div class="block__horizontal_lc">
+                                    <ul>
+                                        <li>React.js</li>
+                                        <li>Redux</li>
+                                        <li>Redux-ToolKit</li>
+                                    </ul>
+                                </div>
+                                <div class="block__horizontal_rc">
+                                    <a href="http://react-space.zzz.com.ua/" target="_blink">
+                                        <img class="block__horizontal_img img__autoscroll" src="./src/img/space.jpg"
+                                            alt="Space Tourism">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__rc_bottom">
+                <div class="block5">
+                    <h2>React Store</h2>
+                    <div class="block__horizontal_content">
+                        <div class="block__horizontal_lc">
+                            <ul>
+                                <li>React.js</li>
+                                <li>Redux</li>
+                                <li>Redux-ToolKit</li>
+                                <li>Redux-Saga</li>
+                                <li>PHP+MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="block__horizontal_rc">
+                            <a href="http://react-home.pp.ua/" target="_blink">
+                                <img class="block__horizontal_img img__autoscroll" src="./src/img/react1.png"
+                                    alt="React store">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_portfolio">
+        <svg class="mobile_close_btn">
+            <use xlink:href="./src/img/close.svg#close"></use>
+        </svg>
+        <div class="menu__item">
+            <a href="https://ragaban.github.io/Aperture/" target="_blank">
+                <svg class="mobile_portfolio_link">
+                    <use xlink:href="./src/img/link.svg#link"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/ragaban/Aperture" target="_blank">
+                <svg class="mobile_portfolio_link_git">
+                    <use xlink:href="./src/img/github-icon.svg#github"></use>
+                </svg>
+            </a>
+            <div class="mobile_portfolio_header">
+                <h2>Landing Aperture</h2>
+            </div>
+            <div class="block__vertical_img">
+                <img class="img__autoscroll_m" src="./src/img/Aperture.png" alt="aperture">
+            </div>
+        </div>
+        <div class="menu__item">
+            <a href="http://react-home.pp.ua/kodo/" target="_blank">
+                <svg class="mobile_portfolio_link">
+                    <use xlink:href="./src/img/link.svg#link"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/ragaban/Kodo" target="_blank">
+                <svg class="mobile_portfolio_link_git">
+                    <use xlink:href="./src/img/github-icon.svg#github"></use>
+                </svg>
+            </a>
+            <div class="mobile_portfolio_header">
+                <h2>Landing Kodo</h2>
+            </div>
+            <div class="block__vertical_img">
+                <img class="img__autoscroll_m" src="./src/img/kodo.jpg" alt="Kodo">
+            </div>
+        </div>
+        <div class="menu__item">
+            <a href="https://ragaban.github.io/ViaKeto/" target="_blank">
+                <svg class="mobile_portfolio_link">
+                    <use xlink:href="./src/img/link.svg#link"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/ragaban/ViaKeto" target="_blank">
+                <svg class="mobile_portfolio_link_git">
+                    <use xlink:href="./src/img/github-icon.svg#github"></use>
+                </svg>
+            </a>
+            <div class="mobile_portfolio_header">
+                <h2>Landing ViaKero</h2>
+            </div>
+            <div class="block__vertical_img">
+                <img class="img__autoscroll_m" src="./src/img/ViaKeto.png" alt="Via Keto">
+            </div>
+        </div>
+        <div class="menu__item">
+            <a href="http://react-home.pp.ua/" target="_blank">
+                <svg class="mobile_portfolio_link">
+                    <use xlink:href="./src/img/link.svg#link"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/ragaban/React-project" target="_blank">
+                <svg class="mobile_portfolio_link_git">
+                    <use xlink:href="./src/img/github-icon.svg#github"></use>
+                </svg>
+            </a>
+            <div class="mobile_portfolio_header">
+                <h2>React Store</h2>
+            </div>
+            <div class="block__vertical_img">
+                <img class="img__autoscroll_m" src="./src/img/react1.png" alt="React Store">
+            </div>
+        </div>
+        <div class="menu__item">
+            <a href="http://react-space.zzz.com.ua/" target="_blank">
+                <svg class="mobile_portfolio_link">
+                    <use xlink:href="./src/img/link.svg#link"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/ragaban/Space" target="_blank">
+                <svg class="mobile_portfolio_link_git">
+                    <use xlink:href="./src/img/github-icon.svg#github"></use>
+                </svg>
+            </a>
+            <div class="mobile_portfolio_header">
+                <h2>Space Tourism</h2>
+            </div>
+            <div class="block__vertical_img">
+                <img class="img__autoscroll_m" src="./src/img/space.jpg" alt="Space Tourism">
+            </div>
+        </div>
+    </div>
+    <nav class="burger__menu">
+        <a class="mobile__link" href="#" data-scrollTo=".content">SPA приложения</a>
+        <a class="mobile__link" href="#" data-scrollTo=".htmlcss">Верстка HTML/CSS</a>
+        <a class="mobile__link" href="#" data-scrollTo=".about">Обо мне</a>
+        <a class="mobile__link" href="#" data-scrollTo=".footer">Контакты</a>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/src/js/swiper.js"></script>
+    <script src="/src/js/text_header.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/text_html.js"></script>
+    <script src="/src/js/dynamic_adapt.js"></script>
+    <script src="/src/js/scrolltoblock.js"></script>
+    <script src="/src/js/animation.js"></script>
+</body>
+
+</html>

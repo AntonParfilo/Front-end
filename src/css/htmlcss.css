@@ -1,0 +1,52 @@
+.htmlcss {
+  margin-top: 50px !important;
+}
+.htmlcss .htmlcss__content {
+  display: flex;
+}
+.htmlcss .htmlcss__content .htmlcss__content_lc {
+  position: relative;
+  width: 50%;
+  height: 400px;
+}
+.htmlcss .htmlcss__content .htmlcss__content_lc .htmlcss__content_lc_wrapper {
+  background: url("../img/htmlcss.png") no-repeat top center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 50;
+}
+.htmlcss .htmlcss__content .htmlcss__content_lc::after {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: rgb(42, 14, 32);
+  background: radial-gradient(circle, rgb(42, 14, 32) 0%, rgba(15, 14, 25, 0) 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a0e20",endColorstr="#0f0e19",GradientType=1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.htmlcss .htmlcss__content .htmlcss__content_lc #html_text {
+  opacity: 0.2;
+  font-size: 20px;
+}
+.htmlcss .htmlcss__content .htmlcss__content_rc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.htmlcss .htmlcss__content .htmlcss__content_rc h2 span {
+  color: #F10749;
+}
+.htmlcss .htmlcss__content .htmlcss__content_rc .htmlcss__blocks {
+  padding: 20px 20px;
+  border: 1px #ccc solid;
+  margin: 10px 0;
+  border-radius: 5px;
+}

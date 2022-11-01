@@ -1,0 +1,85 @@
+.htmlcss{
+    margin-top: 50px !important;
+    h1{
+        @extend %showFromBottom;
+        @include adaptiveValue("font-size", 45, 23, 600, 320);
+    }
+    .htmlcss__content{
+        display: flex;
+        .htmlcss__content_lc{
+            position: relative;
+            width: 50%;
+            height: 400px;
+            @include adaptiveValue("height", 300, 230, 400, 320);
+            .htmlcss__content_lc_wrapper{
+                background: url("../img/htmlcss.png") no-repeat top center;
+                background-size: contain;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                z-index: 50;
+                @extend %showOpacity;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 1000px;
+                height: 1000px;
+                background: rgb(42,14,32);
+                background: -moz-radial-gradient(circle, rgba(42,14,32,1) 0%, rgba(15,14,25,0) 60%);
+                background: -webkit-radial-gradient(circle, rgba(42,14,32,1) 0%, rgba(15,14,25,0) 60%);
+                background: radial-gradient(circle, rgba(42,14,32,1) 0%, rgba(15,14,25,0) 60%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a0e20",endColorstr="#0f0e19",GradientType=1); 
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+            }
+            #html_text{
+                opacity: .2;
+                font-size: 20px;
+            }
+        }
+        .htmlcss__content_rc{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 50;
+            h2{
+                @include adaptiveValue("font-size", 24, 20, 600, 320);
+                span{
+                    color: #F10749;
+                }
+            }
+            .htmlcss__blocks{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 20px 20px;
+                border: 1px #ccc solid;
+                margin: 10px 0;
+                border-radius: 5px;
+                transition: .4s;
+                transform: translateX(100%);
+            }
+            
+        }
+    }
+}
+
+@media(max-width:768px){
+    .htmlcss__content{
+        flex-direction: column;
+        .htmlcss__content_lc{
+            width: 100% !important;
+            height: 300px !important;
+            #html_text{
+                font-size: 35px !important;
+                opacity: 0.1 !important;
+            }
+        }
+        .htmlcss__content_rc{
+            width: 100% !important;
+        }
+    }
+}

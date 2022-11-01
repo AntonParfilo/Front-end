@@ -1,0 +1,200 @@
+.main_menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: none;
+}
+.main_menu .main_menu__lc {
+  width: 55%;
+}
+.main_menu .main_menu__lc .block6 {
+  overflow: hidden;
+  background-color: #101019;
+  transform: translateX(100%);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.main_menu .main_menu__rc {
+  width: 45%;
+}
+.main_menu .main_menu__rc .main_menu__rc_top {
+  height: 60%;
+  display: flex;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right {
+  width: 70%;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_top {
+  display: flex;
+  height: 50%;
+  overflow: hidden;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_top .block1 {
+  background-color: #101019;
+  position: relative;
+  transform: translateX(100%);
+  visibility: hidden;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_top .block1 .menu_close_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_top .block1 .menu_close_button:hover {
+  cursor: pointer;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_top .block2 {
+  background-color: #202029;
+  position: relative;
+  transform: translateX(100%);
+  visibility: hidden;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom {
+  overflow: hidden;
+  height: 50%;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 {
+  position: relative;
+  background-color: #292957;
+  transform: translateY(-100%);
+  visibility: hidden;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 .block3__content {
+  display: flex;
+  height: 88%;
+  align-items: center;
+  justify-content: center;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 .block3__content .block3__lc {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 .block3__content .block3__lc ul {
+  margin: 0;
+  padding: 0;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 .block3__content .block3__lc ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 .block3__content .block3__rc {
+  height: 70%;
+  width: 70%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 .block3__content .block3__rc:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_right .main_menu__rc_top_right_bottom .block3 .block3__content .block3__rc .block3__img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: 5s;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_left {
+  width: 30%;
+  overflow: hidden;
+}
+.main_menu .main_menu__rc .main_menu__rc_top .main_menu__rc_top_left .block4 {
+  background-color: #14141C;
+  transform: translateX(100%);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom {
+  overflow: hidden;
+  height: 40%;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 {
+  background-color: #F10749;
+  transform: translateY(-100%);
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 .block__horizontal_content {
+  display: flex;
+  height: 96%;
+  align-items: center;
+  justify-content: center;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 .block__horizontal_content .block__horizontal_lc {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 .block__horizontal_content .block__horizontal_lc ul {
+  margin: 0;
+  padding: 0;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 .block__horizontal_content .block__horizontal_lc ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 .block__horizontal_content .block__horizontal_rc {
+  height: 70%;
+  width: 70%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 .block__horizontal_content .block__horizontal_rc:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+}
+.main_menu .main_menu__rc .main_menu__rc_bottom .block5 .block__horizontal_content .block__horizontal_rc .block__horizontal_img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: 5s;
+}
